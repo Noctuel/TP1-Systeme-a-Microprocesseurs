@@ -1,4 +1,4 @@
-# TP1-Systeme-a-Microprocesseurs
+# Domingo Dorian - SIMOES Raphael - TP1-Systeme-a-Microprocesseurs
 # 1.1 Création de la structure du projet
 6. Activez l’USART2 en mode Asynchrone. Gardez les paramètres par défaut, et notez le baud rate
 => baud rate 115200 Bits/s
@@ -7,8 +7,9 @@
 13. Pourquoi PB9 est relié à la masse ?
 =>Cela permet de choisir le boot ici relier à la masse cela permet de boot sur la flash.
 14. Quel est le rôle de L1, C5 et C7 ?
-=>Il s'agit d'un filtre de la tension d'aliemntation pour obtenir une tension d'alimentation pour l'ADC car ce composant est plus sensible
-=> Il  y a deux capacité la petite filtre les petites variations et la grande les grandes variations
+=>Il s'agit d'un filtre de la tension d'alimentation pour obtenir une tension d'alimentation pour l'ADC car ce composant est plus sensible
+=> Il  y a deux capacité la petite filtre les petites variations et la grande les grandes variation
+=> L'inductance est utiliser à la place d'une résistance pour éviter une chute de tension.
 
 
 # 1.3 Le reste du schéma
