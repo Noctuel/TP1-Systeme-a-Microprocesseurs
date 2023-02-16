@@ -35,3 +35,14 @@ En électronique, Quad Flat Package (QFP) est un type de boîtier de circuit int
 Le boîtier rectangulaire (en plastique ou en céramique) est doté de broches de connexion sur ses 4 côtés (jusqu'à 200 broches). Les broches sont généralement espacées de 0,4 à 1 mm, et sont extérieures au boîtier contrairement aux QFN.
 => SOT-223 : Il s'agit d'un réguleur de tension LDO
 => small outline integrated circuit : Circuit intégré en boîtier à dimension réduite présentant des connexions en aile de mouette sur deux rangées.
+
+# 3.1 Activation des LL drivers
+2. Regardez les fichiers générés. Quelles sont les différences ?
+=> En paramètrant avec LL on utilise les fonctions du meme nom qui sont moins lourd par exemple stm32l0xx.ll.usart.c fais 400 ligne contre 4000 pour sont équivalent en HAL
+=> On doit utiliser ces fonctions car notre processeur n'aura pas assez de mémoire
+
+4. Que signifie __STATIC_INLINE ?
+=>Inline veut dire que la fonction n'est pas une réel fonction mais que l'on va recopier son code à l'endroit ou on la appeler
+5. Et pourquoi y a-t-il du code dans un .h alors que Môssieur Fiack vous a expres-sément demandé de pas le faire ? (Les deux questions sont peut-être liés, va savoir)
+=> C'est justement a cause de Inline que l'on écrit dans le header
+
