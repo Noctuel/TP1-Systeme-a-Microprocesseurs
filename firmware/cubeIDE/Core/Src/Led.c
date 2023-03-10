@@ -9,7 +9,9 @@
 
 //Démarre le timer
 void LedStart(TIMER_LED *myled){
-	LL_TIM_EnableCounter(myled->timer);
+
+	LL_TIM_EnableCounter(myled->timer);////active le counter
+	LL_TIM_CC_EnableChannel(myled->timer, myled->channel); //active la sortie pwm
 }
 
 // Configure le rapport cyclique de la PMW entre 0 et 255
@@ -23,7 +25,7 @@ void LedPulse(TIMER_LED *myled){
 	if(myled->inc==0){
 		myled->lum++;
 		LedSetValue(myled);
-		if(myled.lum == 255)
+		if(myled->lum == 255)
 			myled->inc = 1;
 	}
 	else{

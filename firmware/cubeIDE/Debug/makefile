@@ -60,8 +60,8 @@ all: main-build
 main-build: firmware.elf secondary-outputs
 
 # Tool invocations
-firmware.elf firmware.map: $(OBJS) $(USER_OBJS) /home/ese/TP1-Systeme-a-Microprocesseurs/firmware/firmware/STM32L021K4TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "firmware.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"/home/ese/TP1-Systeme-a-Microprocesseurs/firmware/firmware/STM32L021K4TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+firmware.elf firmware.map: $(OBJS) $(USER_OBJS) /home/ese/TP1-Systeme-a-Microprocesseurs/firmware/cubeIDE/STM32L021K4TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "firmware.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"/home/ese/TP1-Systeme-a-Microprocesseurs/firmware/cubeIDE/STM32L021K4TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

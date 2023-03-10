@@ -148,7 +148,7 @@ void TIM21_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM21_IRQn 0 */
 	LL_TIM_ClearFlag_UPDATE(TIM21);
-	LedPulse(TIM2_LED);
+	LedPulse(&TIM2_LED);
   /* USER CODE END TIM21_IRQn 0 */
   /* USER CODE BEGIN TIM21_IRQn 1 */
 

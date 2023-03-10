@@ -1,0 +1,6 @@
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h:2608:26:LL_USART_IsActiveFlag_RXNE	16	static
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h:2630:26:LL_USART_IsActiveFlag_TXE	16	static
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h:3604:25:LL_USART_ReceiveData8	16	static
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h:3627:22:LL_USART_TransmitData8	16	static
+../Core/Src/Serial.c:10:9:SerialTransmit	32	static
+../Core/Src/Serial.c:19:6:SerialReceiveChar	32	static

@@ -48,6 +48,7 @@ Le boîtier rectangulaire (en plastique ou en céramique) est doté de broches d
 
 # 3.2 LED simple
 2. On compte de 0 à 255 on a donc une fréquence de 32 000 000 /256 = 125 000 Hz. On doit donc avoir un prescaler de 125-1 (on compte de 0)
+8. Le fonctionnement a été validé par l'enseignant.
 
 # 3.3 LED avec timer
 3. On peut laisser PSC à 0 et seuleument mettre ARR à 32 000-1(on compte de 0) pour obtenir notre fréquence de 1 kHz (32 000 000/32 000=1 000 Hz).
@@ -55,4 +56,10 @@ Le boîtier rectangulaire (en plastique ou en céramique) est doté de broches d
 7. Il manque la fonction qui retire l'interuption
 8. On reste bloqué indéfinement dans l'interuption
 9. Appeler immidiatement la fonction du timer qui retire le flag dans notre fonction d'interruption du Timer
+11. Le fonctionnement a été validé par l'enseignant.
 
+# 3.4 UART, un simple echo
+
+5. Il manque & à ch pour passer l'adresse de ch
+
+6. Le fonctionnement a été validé par l'enseignant.
